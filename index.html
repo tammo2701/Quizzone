@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quizzone</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+<h1>Quizzone</h1>
+<small class="tag">Beta • Dashboard</small>
+</header>
+
+
+<main>
+<!-- Dashboard -->
+<section id="dashboard" class="view">
+<h2>Was möchtest du tun?</h2>
+<div class="card-row">
+<button id="btn-spielen" class="card">▶ Spielen</button>
+<button id="btn-quizzes" class="card">📝 Quizzes</button>
+</div>
+</section>
+
+
+<!-- Spielen -->
+<section id="spielen" class="view hidden">
+<h2>Spielen</h2>
+<div id="play-area" class="panel">
+<p class="muted">Wähle ein Quiz im Reiter "Quizzes" oder starte ein zufälliges Spiel.</p>
+<button id="btn-random" class="btn">Zufälliges Quiz starten</button>
+</div>
+<button class="btn back">← Zurück</button>
+</section>
+
+
+<!-- Quizzes -->
+<section id="quizzes" class="view hidden">
+<h2>Quizzes</h2>
+<div id="quiz-list" class="panel"></div>
+<button class="btn back">← Zurück</button>
+</section>
+
+
+</main>
+
+
+<footer class="foot">Quizzone — made with ❤️</footer>
+</div>
+
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
